@@ -3,20 +3,9 @@
 
 AI-powered decision intelligence platform built in Palantir Foundry to help Department of Defense contracting officers identify supplier concentration risk, evaluate acquisition strategies, and strengthen industrial base resilience.
 
----
+**Technology Stack**
 
-## Table of Contents
-
-- Executive Summary
-- Problem Statement
-- Key Results
-- Executive Architecture
-- Application Workflow
-- Machine Learning
-- Technology Stack
-- Repository Structure
-- Public Repository Notice
-- Future Enhancements
+Palantir Foundry • Workshop • Ontology • Pipeline Builder • AIP • Python • SQL • XGBoost
 
 ---
 
@@ -32,17 +21,19 @@ Rather than reviewing contracts individually, CRISP evaluates supplier markets a
 
 Traditional procurement systems provide visibility into individual contracts but limited insight into supplier concentration across an entire market.
 
+This visibility gap is documented in **GAO-25-107283 (July 2025)**, which found that DoD supply chain visibility efforts remain fragmented and provide limited insight into supplier markets.
+
 As a result, contracting officers may overlook excessive vendor dependency, declining competition, or foreign exposure until acquisition options become constrained.
 
 CRISP addresses this challenge by integrating procurement data, analytics, machine learning, and AI-assisted decision support into a single operational workflow.
 
 ---
 
-# Key Results
+# Key Capabilities
 
-- Analyzed 27,000+ FPDS contract records
+- Analyzed 27,000+ FPDS contract records spanning **FY2020–FY2025** *(update to FY2026 if that is your final dataset)*
 - PSC-level concentration analysis using the Herfindahl–Hirschman Index (HHI)
-- XGBoost market-entry prediction model (ROC-AUC: 0.71)
+- XGBoost market-entry prediction model (ROC-AUC: **0.71**)
 - AI-assisted acquisition strategy recommendations
 - Human-in-the-loop decision support workflow
 
@@ -78,7 +69,7 @@ Analyze supplier concentration, vendor market share, foreign exposure, and AI-ge
 
 ## 3. Contract Strategy
 
-Evaluate acquisition strategies through simulation, projected HHI reduction, estimated cost impacts, and AI-assisted recommendations.
+Evaluate acquisition strategies through an interactive **what-if simulation** that estimates projected HHI reduction, vendor market share, cost premium, and AI-assisted recommendations before acquisition execution.
 
 ![Contract Strategy](screenshots/contract_strategy.png)
 
@@ -96,16 +87,19 @@ Track mitigation activities, acquisition workflows, execution progress, and AI-a
 
 CRISP incorporates an XGBoost classification model that estimates the probability a PSC market will naturally attract additional vendors.
 
-### Model Features
+## Model Features
 
 - Herfindahl–Hirschman Index (HHI)
 - Vendor Count
 - Total Obligations
 - Historical Procurement Activity
 
-### Performance
+## Performance
 
 - ROC-AUC: **0.71**
+- Top predictive features (SHAP): **Vendor Count** and **Herfindahl–Hirschman Index (HHI)**
+
+The XGBoost model estimates the probability of natural market diversification, while the interactive **what-if simulation** enables contracting officers to evaluate acquisition strategies before execution.
 
 Machine learning recommendations augment—not replace—contracting officer judgment.
 
@@ -113,14 +107,15 @@ Machine learning recommendations augment—not replace—contracting officer jud
 
 # Technology Stack
 
-- Palantir Foundry
-- Workshop
-- Ontology
-- Pipeline Builder
-- AIP
-- Python
-- SQL
-- XGBoost
+| Category | Technologies |
+|-----------|--------------|
+| Platform | Palantir Foundry |
+| Applications | Workshop |
+| Data Modeling | Ontology |
+| Data Engineering | Pipeline Builder |
+| AI | AIP |
+| Programming | Python, SQL |
+| Machine Learning | XGBoost |
 
 ---
 
@@ -157,7 +152,8 @@ No proprietary Palantir Foundry assets, internal ontology exports, confidential 
 
 - Supply chain resilience scoring
 - Additional predictive models
+- Enhanced what-if scenario analysis
 - Scenario optimization
-- Enhanced market-entry forecasting
+- Market-entry forecasting improvements
 - Expanded AI-assisted acquisition planning
 - Interactive public demonstration using synthetic data
