@@ -142,12 +142,11 @@ LICENSE
 
 # Public Repository Notice
 
-This repository is intended as a professional portfolio demonstrating the CRISP solution architecture, analytics approach, and decision intelligence workflow.
+This repository is intended as a professional portfolio demonstrating the CRISP solution architecture, analytics approach, and decision intelligence workflow developed using Palantir Foundry.
 
-To protect intellectual property and comply with applicable restrictions, implementation artifacts—including Palantir Foundry pipelines, Ontology definitions, AIP prompts, source code, and operational datasets—are intentionally omitted.
+To protect intellectual property, implementation artifacts—including Foundry pipelines, Ontology definitions, AIP prompts, source code, and operational datasets—are intentionally omitted.
 
 The repository focuses on system design, methodology, application capabilities, and executive decision support rather than implementation details.
-
 ---
 
 # Future Enhancements
