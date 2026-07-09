@@ -31,7 +31,7 @@ CRISP addresses this challenge by integrating procurement data, analytics, machi
 
 # Key Capabilities
 
-- Analyzed 27,000+ FPDS contract records spanning **FY2020–FY2025**
+- Analyzed 27,000+ contract records spanning **FY2020–FY2025**
 - PSC-level concentration analysis using the Herfindahl–Hirschman Index (HHI)
 - XGBoost market-entry prediction model (ROC-AUC: **0.71**)
 - AI-assisted acquisition strategy recommendations
